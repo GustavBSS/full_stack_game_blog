@@ -9,7 +9,7 @@ const NewsAPI = () => {
     useEffect(() => {
         // Chamada à API
         axios
-            .get('https://newsapi.org/v2/everything?q=games&apiKey=YOUR_API_KEY')
+            .get('https://newsapi.org/v2/everything?q=games&apiKey=143b360f65ba4c00922cef68ac219af3')
             .then(response => {
                 setArticles(response.data.articles); // Define os artigos no estado
                 setLoading(false);
