@@ -1,5 +1,6 @@
 import React from 'react';
 import NewsAPI from './APIGames.js';
+import './homepage.css';
 
 const HomePage = () => {
     return (
