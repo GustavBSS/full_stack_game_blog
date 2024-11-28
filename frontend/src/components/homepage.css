@@ -1,8 +1,13 @@
+body {
+    background-color: #2f3437 !important;
+    /* Dark gray background */
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    background-color: #333;
+    background-color: #2f3437 !important;
     /* Dark gray container background */
     border: 1px solid #555;
     /* Dark gray border */
@@ -50,7 +55,7 @@
 
 .card-text {
     font-size: 0.9rem;
-    color: #ccc;
+    color: #ccc !important;
     /* Light gray text color */
 }
 
