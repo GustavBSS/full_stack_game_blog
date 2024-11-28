@@ -5,20 +5,37 @@ const NewsAPI = () => {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const cache = {}; // In-memory cache
 
     useEffect(() => {
-        // Chamada à API
-        axios
-            .get('https://newsapi.org/v2/everything?q=games&apiKey=143b360f65ba4c00922cef68ac219af3')
-            .then(response => {
-                setArticles(response.data.articles); // Define os artigos no estado
+        const fetchArticles = async () => {
+            const cacheKey = 'news-articles';
+            if (cacheKey in cache) {
+                setArticles(cache[cacheKey]);
                 setLoading(false);
-            })
-            .catch(err => {
+                return;
+            }
+
+            try {
+                const response = await axios.get('https://newsapi.org/v2/everything', {
+                    params: {
+                        q: 'game',
+                        apiKey: '0be89051f4434bdf8e7373e27f57b12e',
+                        page: 1 // Fetch only the first page of results
+                    }
+                });
+                const articles = response.data.articles;
+                cache[cacheKey] = articles; // Store response in cache
+                setArticles(articles);
+                setLoading(false);
+            } catch (err) {
                 console.error('Erro ao buscar notícias:', err);
                 setError('Não foi possível carregar as notícias.');
                 setLoading(false);
-            });
+            }
+        };
+
+        fetchArticles();
     }, []);
 
     if (loading) {

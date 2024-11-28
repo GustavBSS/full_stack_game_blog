@@ -1,31 +1,104 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #2f3437;
+  /* Dark gray background */
+  color: #fff;
+  /* White text color */
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+  background-color: #333;
+  /* Dark gray container background */
+  border: 1px solid #555;
+  /* Dark gray border */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Drop shadow */
 }
 
 .navbar {
   margin-bottom: 20px;
+  background-color: #444;
+  /* Dark gray navbar background */
+  padding: 10px;
+  border-bottom: 1px solid #555;
+  /* Dark gray border */
+}
+
+.navbar-brand {
+  color: #fff;
+  /* White text color */
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #ccc;
+  /* Light gray hover color */
+}
+
+.nav-link {
+  color: #fff;
+  /* White text color */
+}
+
+.nav-link:hover {
+  color: #ccc;
+  /* Light gray hover color */
 }
 
 .card {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: none;
+  background-color: #333;
+  /* Dark gray card background */
 }
 
 .card-title {
   font-weight: bold;
+  color: #fff;
+  /* White text color */
+}
+
+.card-text {
+  color: #ccc;
+  /* Light gray text color */
 }
 
 footer {
   background-color: #333;
+  /* Dark gray footer background */
   color: #fff;
+  /* White text color */
   padding: 10px 0;
   text-align: center;
+  border-top: 1px solid #555;
+  /* Dark gray border */
+}
+
+/* Add some gamer-style fonts */
+@font-face {
+  font-family: "PixelFont";
+  src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+}
+
+.pixel-font {
+  font-family: "PixelFont";
+  font-size: 24px;
+  color: #fff;
+  /* White text color */
+}
+
+/* Add some gamer-style colors */
+.gamer-color {
+  color: #34c759;
+  /* Green color */
+}
+
+.gamer-background {
+  background-color: #2f3437;
+  /* Dark gray background */
 }
