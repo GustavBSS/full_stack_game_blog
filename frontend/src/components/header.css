@@ -1,20 +1,52 @@
 .navbar {
     background-color: #333;
+    /* Dark gray navbar background */
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    /* Dark gray border */
 }
 
 .navbar-brand {
     color: #fff;
+    /* White text color */
     font-weight: bold;
 }
 
 .navbar-brand:hover {
     color: #ccc;
+    /* Light gray hover color */
 }
 
 .nav-link {
     color: #fff;
+    /* White text color */
 }
 
 .nav-link:hover {
     color: #ccc;
+    /* Light gray hover color */
+}
+
+/* Add some gamer-style fonts */
+@font-face {
+    font-family: "PixelFont";
+    src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+}
+
+.pixel-font {
+    font-family: "PixelFont";
+    font-size: 24px;
+    color: #fff;
+    /* White text color */
+}
+
+/* Add some gamer-style colors */
+.gamer-color {
+    color: #34c759;
+    /* Green color */
+}
+
+.gamer-background {
+    background-color: #2f3437;
+    /* Dark gray background */
 }

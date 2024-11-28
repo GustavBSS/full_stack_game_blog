@@ -13,6 +13,7 @@ import Posts from './components/Posts';
 import Highlights from './components/highlights';
 import SearchBar from './components/searchbar';
 import NewsAPI from './components/APIGames';
+import './App.css';
 
 function App() {
     return (
