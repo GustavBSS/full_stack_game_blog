@@ -12,6 +12,7 @@ import PostGrid from './components/postgrid';
 import Posts from './components/Posts';
 import Highlights from './components/highlights';
 import SearchBar from './components/searchbar';
+import NewsAPI from './components/APIGames';
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/post/:id" element={<PostDetail />} />
                 <Route path="/highlights" element={<Highlights />} />
                 <Route path="/postgrid" element={<PostGrid />} />
+                <Route path="/NewsAPI" element={<NewsAPI />} />
             </Routes>
             <Footer />
         </Router>
