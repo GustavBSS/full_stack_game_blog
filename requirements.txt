@@ -9,4 +9,4 @@ requests==2.32.3
 serpapi==0.1.5
 sqlparse==0.5.2
 tzdata==2024.2
-urllib3==2.2.3
+urllib3==2.6.0
